@@ -7,7 +7,6 @@
     background-color: #030561; 
 }
 
-/* Estilos para la imagen */
 .contenedor-titulo img {
   width: 150px;
   height: auto;
@@ -15,7 +14,6 @@
   justify-self: start;                
 }
 
-/* Estilos para el Título */
 .contenedor-titulo h1 {
   grid-column: 2;                     
   margin: 0;
@@ -24,7 +22,6 @@
   text-align: center;                
 }
 
-/* Estilos para la barra de navegación */
 
 .menu-lateral {
   display: flex;                         
@@ -45,7 +42,6 @@
   color: #0a0041;                      
 }
 
-/* Estilos para el contenido principal */
 .contenido-pagina h2{
   padding: 1px;
   color: #000000;
@@ -54,14 +50,12 @@
   line-height: 1.6;
 }
 
-/* Contenedor principal que ordena las tarjetas */
 article.contenedor-musica {
   display: grid;
   gap: 20px;            
   padding: 20px;
 }
 
-/* Estilo para cada tarjeta (<section>) */
 .tarjeta-musica {
   background-color: #000a46;      
   border: 1px solid #b0e6ff;         
@@ -72,28 +66,24 @@ article.contenedor-musica {
   justify-content: space-between;    
 }
 
-/* Títulos h3 dentro de las tarjetas */
 .tarjeta-musica h3 {
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Enlaces de los títulos */
 .tarjeta-musica h3 a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-/* Texto descriptivo */
 .tarjeta-musica p {
   color: #ffffff;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
 
-/* Botón "Conocer más" */
 .boton-mas {
   display: inline-block;
   background-color: #ffffff;       
@@ -110,7 +100,6 @@ article.contenedor-musica {
   background-color: #1f1480;        
 }
 
-/* Estilos generales del Footer */
 .pie-pagina {
   background-color: #07013a;       
   color: #ffffff;
@@ -119,7 +108,6 @@ article.contenedor-musica {
   font-family: Arial, sans-serif;
 }
 
-/* Contenido centrado */
 .contenido-footer {
   max-width: 800px;
   margin: 0 auto;
@@ -138,7 +126,6 @@ article.contenedor-musica {
   margin-bottom: 25px;
 }
 
-/* Bloque con los datos de contacto en una cajita elegante */
 .datos-contacto {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -155,7 +142,6 @@ article.contenedor-musica {
   font-style: normal;              
 }
 
-/* Enlaces del correo y teléfono */
 .datos-contacto a {
   color: #a496ff;                 
   text-decoration: none;
@@ -167,7 +153,6 @@ article.contenedor-musica {
   text-decoration: underline;
 }
 
-/* Sección final del Copyright */
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 15px;
@@ -178,4 +163,49 @@ article.contenedor-musica {
   color: #777777;
   font-size: 0.85rem;
   margin: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-hamburguesa {
+  display: block;
+  width: 100%;
+  background-color: #030561;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif; 
+  transition: background-color 0.3s ease;
+}
+
+.btn-hamburguesa:hover {
+  background-color: #1f1480; 
+}
+
+.menu-lateral {
+  display: block; 
+  padding: 0;
+}
+
+.menu-lateral aside {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-lateral a {
+  margin: 0;
+  padding: 15px;
+  display: block;
+  border-bottom: 1px solid rgba(3, 1, 109, 0.2);
+}
+
+.menu-lateral a:last-child {
+  border-bottom: none;
 }

@@ -23,7 +23,11 @@
         <h1>OYENTES DESVELADOS</h1>
     </div>
 
-    <nav class="menu-lateral">
+    <!-- Botón de hamburguesa -->
+    <button id="toggle-button" class="btn-hamburguesa">☰ Menú</button>
+
+    <!-- Barra de navegación con ID y clase 'hidden' para ocultarlo por defecto -->
+    <nav class="menu-lateral hidden" id="hidden-message">
         <aside>
             <a href="../index.html">Inicio</a>
             <a href="disli.html">Discos/Linea</a>
@@ -128,6 +132,17 @@
             <p>&copy; 2026 Oyentes Desvelados. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+      const toggleButton = document.querySelector("#toggle-button");
+      const hiddenMessage = document.querySelector("#hidden-message");
+
+      if (toggleButton && hiddenMessage) {
+        toggleButton.addEventListener("click", () => {
+          hiddenMessage.classList.toggle("hidden");
+        });
+      }
+    </script>
 </body>
 
 </html>

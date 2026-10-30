@@ -18,11 +18,18 @@
         <h1 class="header-title">OYENTES DESVELADOS</h1>
     </div>
 
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a  href="disli.html">Discos/Linea</a>
-        <a  href="evento.html">Eventos</a>
+    <!-- Botón de hamburguesa -->
+    <button id="toggle-button" class="btn-hamburguesa">☰ Menú</button>
+
+    <!-- Barra de navegación con ID y clase 'hidden' para ocultarlo por defecto -->
+    <nav class="menu-lateral hidden" id="hidden-message">
+        <aside>
+            <a href="../index.html">Inicio</a>
+            <a href="disli.html">Discos/Linea</a>
+            <a href="evento.html">Eventos</a>
+        </aside>
     </nav>
+
     <h1 class="page-title">OYENTES DESVELADOS: ROCK</h1>
 
     <div class="gallery">
@@ -117,7 +124,8 @@
             características distintivas.
         </p>
         <hr class="divider">
-        <h2 class="content-subtitle">1. Rock and Roll</h2>
+1.         <h2 class="content-subtitle">Rock and Roll
+</h2>
         <p class="content-text">
             El origen de todo. Surgió en los años 50 con artistas como Chuck Berry, Little Richard y Elvis Presley.
             Mezcla
@@ -172,4 +180,16 @@
             <p>&copy; 2026 Oyentes Desvelados. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Script para la funcionalidad del menú hamburguesa -->
+    <script>
+      const toggleButton = document.querySelector("#toggle-button");
+      const hiddenMessage = document.querySelector("#hidden-message");
+
+      if (toggleButton && hiddenMessage) {
+        toggleButton.addEventListener("click", () => {
+          hiddenMessage.classList.toggle("hidden");
+        });
+      }
+    </script>
 </body>

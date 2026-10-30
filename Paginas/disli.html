@@ -42,7 +42,12 @@
     <img src="../Imagenes/icon.jpg" alt="Icono de Oyentes Desvelados">
     <h1>OYENTES DESVELADOS</h1>
   </div>
-  <nav class="menu-lateral">
+  
+  <!-- Botón de hamburguesa -->
+  <button id="toggle-button" class="btn-hamburguesa">☰ Menú</button>
+
+  <!-- Se agregó el ID y la clase 'hidden' para ocultarlo en móviles por defecto -->
+  <nav class="menu-lateral hidden" id="hidden-message">
     <aside>
       <a href="index.html">Inicio</a>
       <a href="disli.html">Discos/Linea</a>
@@ -74,7 +79,7 @@
 
     <div style="text-align: center; max-width: 200px;">
       <img
-        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/704710/ss_5014d1e510a653d9e57e8655b6e34d180b2a87b9.1920x1080.jpg?t=1667316315"
+        src="https://i.scdn.co/image/ab67616d0000b27305ded1194cfefa65af276a4e"
         width="200" style="display: block; margin-bottom: 0;">
       <p style="margin-top: 5px; margin-bottom: 0;"><a href="https://www.ebay.com/shop/cuphead-cd?_nkw=cuphead+cd"
           target="_blank">Cuphead (Original Soundtrack) - Kristofer Maddigan</a></p>
@@ -171,3 +176,15 @@
     </div>
   </footer>
 </body>
+<script>
+    const toggleButton = document.querySelector("#toggle-button");
+    const hiddenMessage = document.querySelector("#hidden-message");
+
+    if (toggleButton && hiddenMessage) {
+      toggleButton.addEventListener("click", () => {
+        hiddenMessage.classList.toggle("hidden");
+      });
+    }
+  </script>
+</body>
+</html>
